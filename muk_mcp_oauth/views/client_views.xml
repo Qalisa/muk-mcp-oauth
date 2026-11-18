@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_oauth_client_list" model="ir.ui.view">
+        <field name="name">muk_mcp_oauth.client.list</field>
+        <field name="model">muk_mcp_oauth.client</field>
+        <field name="arch" type="xml">
+            <list create="false" edit="false">
+                <field name="name"/>
+                <field name="client_id"/>
+                <field name="redirect_uris"/>
+                <field name="create_date"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_oauth_client" model="ir.actions.act_window">
+        <field name="name">MCP OAuth Clients</field>
+        <field name="res_model">muk_mcp_oauth.client</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <menuitem id="menu_oauth_client"
+        name="OAuth Clients"
+        parent="base.menu_custom"
+        action="action_oauth_client"
+        groups="base.group_system"
+        sequence="200"/>
+
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="authorize" name="MCP OAuth: Authorize">
+        <t t-call="web.login_layout">
+            <form method="post" action="/oauth/authorize" class="o_mcp_oauth_authorize">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <t t-foreach="params.items()" t-as="item">
+                    <input type="hidden" t-att-name="item[0]" t-att-value="item[1]"/>
+                </t>
+                <h4 class="mb-3">
+                    <strong t-out="client.name"/> wants to access Odoo as
+                    <strong t-out="request.env.user.name"/>
+                </h4>
+                <p t-if="scope == 'write'">
+                    It will be able to <strong>read and change</strong> the data you can access in Odoo.
+                </p>
+                <p t-else="">
+                    It will be able to <strong>read</strong> the data you can access in Odoo, without changing it.
+                </p>
+                <p class="text-muted small">
+                    Its access appears among your MCP keys, where you can revoke it at any time.
+                </p>
+                <div class="d-flex gap-2 mt-4">
+                    <button type="submit" name="decision" value="allow" class="btn btn-primary flex-grow-1">Allow</button>
+                    <button type="submit" name="decision" value="deny" class="btn btn-secondary flex-grow-1">Deny</button>
+                </div>
+            </form>
+        </t>
+    </template>
+
+    <template id="authorize_error" name="MCP OAuth: Error">
+        <t t-call="web.login_layout">
+            <div class="alert alert-danger" role="alert">
+                <strong>Authorization refused.</strong>
+                <span t-out="message"/>
+            </div>
+        </t>
+    </template>
+
+</odoo>
