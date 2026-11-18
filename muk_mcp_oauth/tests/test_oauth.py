@@ -77,6 +77,7 @@ class TestMCPOAuth(HttpCase):
         self.assertEqual(server['issuer'], resource['authorization_servers'][0])
         self.assertEqual(server['code_challenge_methods_supported'], ['S256'])
         self.assertTrue(server['registration_endpoint'].endswith('/oauth/register'))
+        self.assertTrue(server['authorization_response_iss_parameter_supported'])
 
     def test_unauthenticated_mcp_points_to_metadata(self):
         response = self._post_json('/mcp', INITIALIZE, headers={'Accept': 'application/json, text/event-stream'})
@@ -99,6 +100,15 @@ class TestMCPOAuth(HttpCase):
     # ----------------------------------------------------------
     # Authorization code + PKCE
     # ----------------------------------------------------------
+
+    def test_hosted_clients_allowed_by_default(self):
+        for uri in ('https://claude.ai/api/mcp/auth_callback', 'https://chatgpt.com/connector_platform_oauth_redirect'):
+            self.assertEqual(self._register([uri]).status_code, 201, uri)
+
+    def test_connect_wizard(self):
+        wizard = self.env['muk_mcp.connect'].create({})
+        self.assertIn(f'claude mcp add --transport http --scope user odoo {wizard.mcp_url}', wizard.claude_code_oauth_cmd)
+        self.assertIn(wizard.mcp_url, wizard.codex_oauth_cmd)
 
     def test_full_flow_read(self):
         _client_id, tokens = self._full_flow()
@@ -124,6 +134,7 @@ class TestMCPOAuth(HttpCase):
         query = self._authorize(client_id, secrets.token_urlsafe(48), decision='deny')
         self.assertEqual(query['error'], 'access_denied')
         self.assertEqual(query['state'], 'xyz')
+        self.assertEqual(query['iss'], self.url_open('/.well-known/oauth-authorization-server').json()['issuer'])
 
     def test_wrong_verifier_and_code_reuse(self):
         client_id = self._register().json()['client_id']

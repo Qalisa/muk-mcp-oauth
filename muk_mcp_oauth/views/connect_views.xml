@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_connect_form" model="ir.ui.view">
+        <field name="name">muk_mcp.connect.form.oauth</field>
+        <field name="model">muk_mcp.connect</field>
+        <field name="inherit_id" ref="muk_mcp.view_connect_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('oe_title')]/p" position="replace">
+                <p class="text-muted">
+                    Add the MCP URL below to your AI tool: it opens Odoo in your browser to sign in and approve the
+                    access, no key to copy. The tool then works with your own Odoo access rights.
+                    A bearer key is only needed by tools that cannot sign in (Cursor, OpenCode, ...).
+                </p>
+            </xpath>
+            <field name="mcp_url" position="attributes">
+                <attribute name="widget">CopyClipboardChar</attribute>
+            </field>
+            <xpath expr="//notebook/page[1]" position="before">
+                <page string="Claude (app)" name="claude_app">
+                    <ol>
+                        <li>In Claude (desktop app or claude.ai): <b>Settings &gt; Connectors &gt; Add custom connector</b>.</li>
+                        <li>Name it <b>Odoo</b> and paste the <b>MCP URL</b> above, then <b>Add</b>.</li>
+                        <li>Click <b>Connect</b>: sign in to Odoo and <b>Allow</b>.</li>
+                        <li>In a conversation, enable Odoo from the <b>+</b> &gt; Connectors menu.</li>
+                    </ol>
+                    <p class="text-muted small">On Team and Enterprise plans, an owner adds the connector for the
+                        organization first; each member then connects with their own Odoo account.</p>
+                </page>
+                <page string="ChatGPT" name="chatgpt">
+                    <ol>
+                        <li>In ChatGPT: <b>Settings &gt; Apps &amp; Connectors &gt; Advanced settings</b>, turn on <b>Developer mode</b>.</li>
+                        <li>Back in <b>Apps &amp; Connectors</b>, click <b>Create</b>.</li>
+                        <li>Name it <b>Odoo</b>, paste the <b>MCP URL</b> above, choose <b>OAuth</b> authentication, then <b>Create</b>.</li>
+                        <li>Sign in to Odoo and <b>Allow</b>; in a conversation, pick Odoo from the <b>+</b> menu.</li>
+                    </ol>
+                    <p class="text-muted small">Developer mode needs a paid ChatGPT plan; on business plans an admin may have to allow it.</p>
+                </page>
+                <page string="Claude Code (sign in)" name="claude_code_oauth">
+                    <field name="claude_code_oauth_cmd" widget="CopyClipboardText" readonly="1" nolabel="1"/>
+                </page>
+                <page string="Codex (sign in)" name="codex_oauth">
+                    <field name="codex_oauth_cmd" widget="CopyClipboardText" readonly="1" nolabel="1"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Reachable by every user, from their preferences (the MCP menu is for administrators) -->
+    <record id="view_users_form_simple_modif" model="ir.ui.view">
+        <field name="name">res.users.preferences.form.mcp</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+        <field name="arch" type="xml">
+            <xpath expr="//h1" position="after">
+                <button name="%(muk_mcp.action_connect)d" type="action" string="Connect an AI tool"
+                        icon="fa-plug" class="btn btn-secondary mb-3"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

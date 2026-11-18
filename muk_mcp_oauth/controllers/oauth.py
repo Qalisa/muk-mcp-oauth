@@ -66,6 +66,8 @@ class MCPOAuthController(http.Controller):
             'token_endpoint_auth_methods_supported': ['none'],
             'revocation_endpoint_auth_methods_supported': ['none'],
             'scopes_supported': SCOPES_SUPPORTED,
+            # RFC 9207: `iss` in every authorization response (ChatGPT then uses its fixed redirect URI)
+            'authorization_response_iss_parameter_supported': True,
         })
 
     # ----------------------------------------------------------
@@ -123,6 +125,7 @@ class MCPOAuthController(http.Controller):
     def _redirect_back(self, redirect_uri, **query):
         separator = '&' if '?' in redirect_uri else '?'
         query = {k: v for k, v in query.items() if v}
+        query['iss'] = _base_url()  # RFC 9207, same value as the metadata's issuer
         return request.redirect(f'{redirect_uri}{separator}{urlencode(query)}', local=False)
 
     @http.route('/oauth/authorize', type='http', auth='user', methods=['GET'], website=False)

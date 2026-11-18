@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- OAuth callbacks of the hosted clients: Claude (claude.ai and desktop apps, moving to claude.com) and ChatGPT -->
+    <record id="param_allowed_redirect_uris" model="ir.config_parameter">
+        <field name="key">muk_mcp_oauth.allowed_redirect_uris</field>
+        <field name="value">https://claude.ai/api/mcp/auth_callback,https://claude.com/api/mcp/auth_callback,https://chatgpt.com/connector_platform_oauth_redirect</field>
+    </record>
+</odoo>

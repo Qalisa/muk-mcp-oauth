@@ -36,9 +36,16 @@ Allowed at registration and authorization:
 - **Loopback** `http://localhost`, `http://127.0.0.1`, `http://[::1]` on any port (native apps, RFC 8252), as used
   by Claude Code and Codex. The port may differ between registration and authorization.
 - **Exact https URIs** of hosted clients, listed comma-separated in the system parameter
-  `muk_mcp_oauth.allowed_redirect_uris` (for instance the OAuth callbacks of claude.ai or ChatGPT). Empty by default.
+  `muk_mcp_oauth.allowed_redirect_uris`. It is created with the callbacks of Claude (`claude.ai` and `claude.com`,
+  used by the desktop apps too) and ChatGPT (its fixed callback, which ChatGPT uses because this module returns `iss`
+  in authorization responses, RFC 9207); empty it to allow only local clients.
 
 Anything else is refused, and an authorization request with an unknown client or redirect URI is never redirected.
+
+## Connect an AI tool
+
+MuK's **Connect** wizard (Settings > MCP > Connect, and a *Connect an AI tool* button in every user's preferences)
+gets step-by-step tabs for the Claude apps and ChatGPT, and sign-in commands for Claude Code and Codex.
 
 ## Install
 
