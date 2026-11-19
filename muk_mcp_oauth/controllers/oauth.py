@@ -70,11 +70,6 @@ class MCPOAuthController(http.Controller):
             'authorization_response_iss_parameter_supported': True,
         })
 
-    @http.route('/mcp/setup', type='http', auth='user', methods=['GET'])
-    def setup(self):
-        """Short, shareable link to the Connect wizard (after Odoo's login if needed)."""
-        return request.redirect('/odoo/connect-ai')
-
     # ----------------------------------------------------------
     # Dynamic client registration (RFC 7591)
     # ----------------------------------------------------------

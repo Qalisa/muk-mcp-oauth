@@ -117,17 +117,11 @@ class TestMCPOAuth(HttpCase):
         for uri in ('https://claude.ai/api/mcp/auth_callback', 'https://chatgpt.com/connector_platform_oauth_redirect'):
             self.assertEqual(self._register([uri]).status_code, 201, uri)
 
-    def test_setup_link(self):
-        self.authenticate('admin', 'admin')
-        response = self.url_open('/mcp/setup', allow_redirects=False)
-        self.assertTrue(response.headers['Location'].endswith('/odoo/connect-ai'))
-
     def test_connect_wizard(self):
         wizard = self.env['muk_mcp.connect'].create({})
         self.assertIn(f'claude mcp add --transport http --scope user odoo {wizard.mcp_url}', wizard.claude_code_oauth_cmd)
         self.assertIn(wizard.mcp_url, wizard.codex_oauth_cmd)
         self.assertIn('claude mcp login odoo', wizard.claude_code_oauth_cmd)
-        self.assertTrue(wizard.setup_url.endswith('/mcp/setup'))
 
     def test_full_flow_read(self):
         _client_id, tokens = self._full_flow()

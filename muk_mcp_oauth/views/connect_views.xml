@@ -37,10 +37,6 @@
                         <div class="small fw-bold">MCP URL</div>
                         <field name="mcp_url" widget="CopyClipboardChar" readonly="1" nolabel="1"/>
                     </div>
-                    <div class="text-end small o_mcp_share">
-                        <div class="fw-bold">Link to share</div>
-                        <field name="setup_url" widget="CopyClipboardChar" readonly="1" nolabel="1"/>
-                    </div>
                 </div>
                 <notebook name="connect_modes">
                     <page string="Sign in (recommended)" name="sign_in">
@@ -130,7 +126,7 @@
         </field>
     </record>
 
-    <!-- Same wizard as a full page, for links: /mcp/setup redirects here -->
+    <!-- Same wizard as a full page, with a link of its own: /odoo/connect-ai/new -->
     <record id="action_connect_page" model="ir.actions.act_window">
         <field name="name">Connect AI</field>
         <field name="res_model">muk_mcp.connect</field>

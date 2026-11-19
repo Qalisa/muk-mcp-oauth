@@ -44,7 +44,7 @@ Anything else is refused, and an authorization request with an unknown client or
 
 ## Connect an AI tool
 
-MuK's **Connect** wizard (Settings > MCP > Connect, a *Connect an AI tool* button in every user's profile that opens it as a page, `/odoo/connect-ai`, and the shareable link `/mcp/setup` shown in it)
+MuK's **Connect** wizard (Settings > MCP > Connect, a *Connect an AI tool* button in every user's profile that opens it as a page with a link of its own, `/odoo/connect-ai/new`)
 gets step-by-step tabs for the Claude apps and ChatGPT, and sign-in commands for Claude Code and Codex.
 
 ## Read-only switch
