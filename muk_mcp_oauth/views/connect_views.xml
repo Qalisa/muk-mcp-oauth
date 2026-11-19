@@ -36,6 +36,10 @@
                         <div class="small fw-bold">MCP URL</div>
                         <field name="mcp_url" widget="CopyClipboardChar" readonly="1" nolabel="1"/>
                     </div>
+                    <div class="text-end small o_mcp_share">
+                        <div class="fw-bold">Link to share</div>
+                        <field name="setup_url" widget="CopyClipboardChar" readonly="1" nolabel="1"/>
+                    </div>
                 </div>
                 <notebook name="connect_modes">
                     <page string="Sign in (recommended)" name="sign_in">
@@ -142,7 +146,7 @@
         <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
         <field name="arch" type="xml">
             <xpath expr="//h1" position="after">
-                <button name="%(muk_mcp.action_connect)d" type="action" string="Connect an AI tool"
+                <button name="%(muk_mcp_oauth.action_connect_page)d" type="action" string="Connect an AI tool"
                         icon="fa-plug" class="btn btn-secondary mb-3"/>
             </xpath>
         </field>

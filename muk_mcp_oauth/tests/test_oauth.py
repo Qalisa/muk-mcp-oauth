@@ -127,6 +127,7 @@ class TestMCPOAuth(HttpCase):
         self.assertIn(f'claude mcp add --transport http --scope user odoo {wizard.mcp_url}', wizard.claude_code_oauth_cmd)
         self.assertIn(wizard.mcp_url, wizard.codex_oauth_cmd)
         self.assertIn('claude mcp login odoo', wizard.claude_code_oauth_cmd)
+        self.assertTrue(wizard.setup_url.endswith('/mcp/setup'))
 
     def test_full_flow_read(self):
         _client_id, tokens = self._full_flow()
