@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0-20260803\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 06:42+0000\n"
-"PO-Revision-Date: 2026-11-19 06:42+0000\n"
+"POT-Creation-Date: 2026-11-19 06:55+0000\n"
+"PO-Revision-Date: 2026-11-19 06:55+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -15,6 +15,63 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "<b>Apps &amp; Connectors &gt; Create</b>"
+msgstr "<b>Applications et connecteurs &gt; Créer</b>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "<b>Connect</b>: sign in to Odoo and <b>Allow</b>"
+msgstr "<b>Connecter</b> : connectez-vous à Odoo puis <b>Autoriser</b>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"<b>Settings &gt; Apps &amp; Connectors &gt; Advanced settings</b>: turn on "
+"<b>Developer mode</b>"
+msgstr "<b>Paramètres &gt; Applications et connecteurs &gt; Paramètres avancés</b> : activez le <b>Mode développeur</b>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "<b>Settings &gt; Connectors &gt; Add custom connector</b>"
+msgstr "<b>Paramètres &gt; Connecteurs &gt; Ajouter un connecteur personnalisé</b>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"<i class=\"fa fa-comments\" title=\"ChatGPT\"/>\n"
+"                                        <strong>ChatGPT</strong>\n"
+"                                        <span class=\"text-muted small\">web, desktop app</span>"
+msgstr "<i class=\"fa fa-comments\" title=\"ChatGPT\"/> <strong>ChatGPT</strong> <span class=\"text-muted small\">web, application desktop</span>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"<i class=\"fa fa-desktop\" title=\"Claude\"/>\n"
+"                                        <strong>Claude</strong>\n"
+"                                        <span class=\"text-muted small\">desktop app, claude.ai</span>"
+msgstr "<i class=\"fa fa-desktop\" title=\"Claude\"/> <strong>Claude</strong> <span class=\"text-muted small\">application desktop, claude.ai</span>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "<i class=\"fa fa-link fa-lg\" title=\"MCP URL\"/>"
+msgstr "<i class=\"fa fa-link fa-lg\" title=\"URL MCP\"/>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"<i class=\"fa fa-terminal\" title=\"Claude Code\"/>\n"
+"                                        <strong>Claude Code</strong>"
+msgstr "<i class=\"fa fa-terminal\" title=\"Claude Code\"/> <strong>Claude Code</strong>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"<i class=\"fa fa-terminal\" title=\"Codex\"/>\n"
+"                                        <strong>Codex</strong>"
+msgstr "<i class=\"fa fa-terminal\" title=\"Codex\"/> <strong>Codex</strong>"
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize_error
@@ -27,47 +84,14 @@ msgid "Access Expires"
 msgstr "Expiration de l'accès"
 
 #. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"Add the MCP URL below to your AI tool: it opens Odoo in your browser to sign in and approve the\n"
-"                    access, no key to copy. The tool then works with your own Odoo access rights.\n"
-"                    A bearer key is only needed by tools that cannot sign in (Cursor, OpenCode, ...)."
-msgstr "Ajoutez l'URL MCP ci-dessous à votre outil d'IA : il ouvre Odoo dans votre navigateur pour vous connecter et autoriser l'accès, sans clé à copier. L'outil agit ensuite avec vos propres droits d'accès Odoo. Une clé Bearer n'est nécessaire que pour les outils qui ne savent pas se connecter (Cursor, OpenCode, ...)."
-
-#. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize
 msgid "Allow"
 msgstr "Autoriser"
 
 #. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid "Back in <b>Apps &amp; Connectors</b>, click <b>Create</b>."
-msgstr "De retour dans <b>Applications et connecteurs</b>, cliquez sur <b>Créer</b>."
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid "ChatGPT"
-msgstr "ChatGPT"
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid "Claude (app)"
-msgstr "Claude (application)"
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid "Claude Code (sign in)"
-msgstr "Claude Code (connexion)"
-
-#. module: muk_mcp_oauth
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_connect__claude_code_oauth_cmd
 msgid "Claude Code Oauth Cmd"
 msgstr "Commande Claude Code (OAuth)"
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid "Click <b>Connect</b>: sign in to Odoo and <b>Allow</b>."
-msgstr "Cliquez sur <b>Connecter</b> : connectez-vous à Odoo puis cliquez sur <b>Autoriser</b>."
 
 #. module: muk_mcp_oauth
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__client_id
@@ -95,14 +119,14 @@ msgid "Code Hash"
 msgstr "Empreinte du code"
 
 #. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid "Codex (sign in)"
-msgstr "Codex (connexion)"
-
-#. module: muk_mcp_oauth
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_connect__codex_oauth_cmd
 msgid "Codex Oauth Cmd"
 msgstr "Commande Codex (OAuth)"
+
+#. module: muk_mcp_oauth
+#: model:ir.actions.act_window,name:muk_mcp_oauth.action_connect_page
+msgid "Connect AI"
+msgstr "Connecter une IA"
 
 #. module: muk_mcp_oauth
 #: model:ir.model,name:muk_mcp_oauth.model_muk_mcp_connect
@@ -113,6 +137,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_users_form_simple_modif
 msgid "Connect an AI tool"
 msgstr "Connecter un outil d'IA"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "Copy"
+msgstr "Copier"
 
 #. module: muk_mcp_oauth
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__create_uid
@@ -133,16 +162,21 @@ msgstr "Refuser"
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"Developer mode needs a paid ChatGPT plan; on business plans an admin may "
-"have to allow it."
-msgstr "Le mode développeur nécessite un abonnement ChatGPT payant ; sur les offres entreprise, un administrateur doit parfois l'autoriser."
+msgid "Developer mode needs a paid plan."
+msgstr "Le mode développeur nécessite un abonnement payant."
 
 #. module: muk_mcp_oauth
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__display_name
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__display_name
 msgid "Display Name"
 msgstr "Nom affiché"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"For tools that cannot sign in. The key gives access with your rights until "
+"you revoke it."
+msgstr "Pour les outils qui ne savent pas se connecter. La clé donne accès avec vos droits jusqu'à ce que vous la révoquiez."
 
 #. module: muk_mcp_oauth
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__grant_ids
@@ -162,24 +196,8 @@ msgstr "ID"
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"In ChatGPT: <b>Settings &gt; Apps &amp; Connectors &gt; Advanced "
-"settings</b>, turn on <b>Developer mode</b>."
-msgstr "Dans ChatGPT : <b>Paramètres &gt; Applications et connecteurs &gt; Paramètres avancés</b>, activez le <b>Mode développeur</b>."
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"In Claude (desktop app or claude.ai): <b>Settings &gt; Connectors &gt; Add "
-"custom connector</b>."
-msgstr "Dans Claude (application desktop ou claude.ai) : <b>Paramètres &gt; Connecteurs &gt; Ajouter un connecteur personnalisé</b>."
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"In a conversation, enable Odoo from the <code>+</code> &gt; "
-"<b>Connectors</b> menu."
-msgstr "Dans une conversation, activez Odoo depuis le menu <code>+</code> &gt; <b>Connecteurs</b>."
+msgid "In a conversation: <code>+</code> &gt; <b>Connectors</b> &gt; Odoo"
+msgstr "Dans une conversation : <code>+</code> &gt; <b>Connecteurs</b> &gt; Odoo"
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize
@@ -239,6 +257,11 @@ msgid "MCP OAuth Grant"
 msgstr "Autorisation OAuth MCP"
 
 #. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "MCP URL"
+msgstr "URL MCP"
+
+#. module: muk_mcp_oauth
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__name
 msgid "Name"
 msgstr "Nom"
@@ -246,28 +269,20 @@ msgstr "Nom"
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
 msgid ""
-"Name it <code>Odoo</code> and paste the <b>MCP URL</b> above, then "
-"<b>Add</b>."
-msgstr "Nommez-le <code>Odoo</code>, collez l'<b>URL MCP</b> ci-dessus, puis cliquez sur <b>Ajouter</b>."
+"Name: <code>Odoo</code>, URL: the <b>MCP URL</b> above, authentication: "
+"<code>OAuth</code>"
+msgstr "Nom : <code>Odoo</code>, URL : l'<b>URL MCP</b> ci-dessus, authentification : <code>OAuth</code>"
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
 msgid ""
-"Name it <code>Odoo</code>, paste the <b>MCP URL</b> above, choose "
-"<code>OAuth</code> authentication, then <b>Create</b>."
-msgstr "Nommez-le <code>Odoo</code>, collez l'<b>URL MCP</b> ci-dessus, choisissez l'authentification <code>OAuth</code>, puis cliquez sur <b>Créer</b>."
+"Name: <code>Odoo</code>, URL: the <b>MCP URL</b> above, then <b>Add</b>"
+msgstr "Nom : <code>Odoo</code>, URL : l'<b>URL MCP</b> ci-dessus, puis <b>Ajouter</b>"
 
 #. module: muk_mcp_oauth
 #: model:ir.ui.menu,name:muk_mcp_oauth.menu_oauth_client
 msgid "OAuth Clients"
 msgstr "Clients OAuth"
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"On Team and Enterprise plans, an owner adds the connector for the\n"
-"                        organization first; each member then connects with their own Odoo account."
-msgstr "Sur les offres Team et Enterprise, un propriétaire ajoute d'abord le connecteur pour l'organisation ; chaque membre se connecte ensuite avec son propre compte Odoo."
 
 #. module: muk_mcp_oauth
 #: model:ir.model.fields.selection,name:muk_mcp_oauth.selection__muk_mcp_oauth_grant__scope__write
@@ -306,10 +321,22 @@ msgstr "Portée"
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "Sign in (recommended)"
+msgstr "Se connecter (recommandé)"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
 msgid ""
-"Sign in to Odoo and <b>Allow</b>; in a conversation, pick Odoo from the "
-"<code>+</code> menu."
-msgstr "Connectez-vous à Odoo et cliquez sur <b>Autoriser</b> ; dans une conversation, choisissez Odoo depuis le menu <code>+</code>."
+"Sign in to Odoo and <b>Allow</b>; in a conversation: <code>+</code> &gt; "
+"Odoo"
+msgstr "Connectez-vous à Odoo puis <b>Autoriser</b> ; dans une conversation : <code>+</code> &gt; Odoo"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"Team and Enterprise plans: an owner adds the connector for the organization "
+"first."
+msgstr "Offres Team et Enterprise : un propriétaire ajoute d'abord le connecteur pour l'organisation."
 
 #. module: muk_mcp_oauth
 #: model:ir.model.constraint,message:muk_mcp_oauth.constraint_muk_mcp_oauth_client_client_id_unique
@@ -320,6 +347,18 @@ msgstr "L'ID client doit être unique."
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__user_id
 msgid "User"
 msgstr "Utilisateur"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "With a key"
+msgstr "Avec une clé"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"Your AI tool opens Odoo in your browser: you sign in, approve, and it then works with your own\n"
+"                    Odoo access rights. No key to copy."
+msgstr "Votre outil d'IA ouvre Odoo dans votre navigateur : vous vous connectez, autorisez, et il agit ensuite avec vos propres droits d'accès Odoo. Aucune clé à copier."
 
 #. module: muk_mcp_oauth
 #: model:ir.model.fields,help:muk_mcp_oauth.field_muk_mcp_oauth_grant__key_id

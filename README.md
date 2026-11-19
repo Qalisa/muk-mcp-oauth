@@ -44,7 +44,7 @@ Anything else is refused, and an authorization request with an unknown client or
 
 ## Connect an AI tool
 
-MuK's **Connect** wizard (Settings > MCP > Connect, and a *Connect an AI tool* button in every user's preferences)
+MuK's **Connect** wizard (Settings > MCP > Connect, a *Connect an AI tool* button in every user's profile, and the shareable link `/mcp/setup`)
 gets step-by-step tabs for the Claude apps and ChatGPT, and sign-in commands for Claude Code and Codex.
 
 ## Install
