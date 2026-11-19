@@ -1,0 +1,331 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* muk_mcp_oauth
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20260803\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 06:42+0000\n"
+"PO-Revision-Date: 2026-11-19 06:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize_error
+msgid "<strong>Authorization refused.</strong>"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__access_expires
+msgid "Access Expires"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"Add the MCP URL below to your AI tool: it opens Odoo in your browser to sign in and approve the\n"
+"                    access, no key to copy. The tool then works with your own Odoo access rights.\n"
+"                    A bearer key is only needed by tools that cannot sign in (Cursor, OpenCode, ...)."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize
+msgid "Allow"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "Back in <b>Apps &amp; Connectors</b>, click <b>Create</b>."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "ChatGPT"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "Claude (app)"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "Claude Code (sign in)"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_connect__claude_code_oauth_cmd
+msgid "Claude Code Oauth Cmd"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "Click <b>Connect</b>: sign in to Odoo and <b>Allow</b>."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__client_id
+msgid "Client"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__client_id
+msgid "Client ID"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__code_challenge
+msgid "Code Challenge"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__code_expires
+msgid "Code Expires"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__code_hash
+msgid "Code Hash"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "Codex (sign in)"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_connect__codex_oauth_cmd
+msgid "Codex Oauth Cmd"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model,name:muk_mcp_oauth.model_muk_mcp_connect
+msgid "Connect AI Wizard"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_users_form_simple_modif
+msgid "Connect an AI tool"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__create_uid
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__create_date
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize
+msgid "Deny"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"Developer mode needs a paid ChatGPT plan; on business plans an admin may "
+"have to allow it."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__display_name
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__grant_ids
+msgid "Grants"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model,name:muk_mcp_oauth.model_ir_http
+msgid "HTTP Routing"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__id
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__id
+msgid "ID"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"In ChatGPT: <b>Settings &gt; Apps &amp; Connectors &gt; Advanced "
+"settings</b>, turn on <b>Developer mode</b>."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"In Claude (desktop app or claude.ai): <b>Settings &gt; Connectors &gt; Add "
+"custom connector</b>."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"In a conversation, enable Odoo from the <code>+</code> &gt; "
+"<b>Connectors</b> menu."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize
+msgid ""
+"It will be able to <strong>read and change</strong> the data you can access "
+"in Odoo."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize
+msgid ""
+"It will be able to <strong>read</strong> the data you can access in Odoo, "
+"without changing it."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize
+msgid ""
+"Its access appears among your MCP keys, where you can revoke it at any time."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,help:muk_mcp_oauth.field_muk_mcp_oauth_client__redirect_uris
+msgid "JSON list."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__write_uid
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__write_date
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__key_id
+msgid "MCP Key"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model,name:muk_mcp_oauth.model_muk_mcp_oauth_client
+msgid "MCP OAuth Client"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.actions.act_window,name:muk_mcp_oauth.action_oauth_client
+msgid "MCP OAuth Clients"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model,name:muk_mcp_oauth.model_muk_mcp_oauth_grant
+msgid "MCP OAuth Grant"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__name
+msgid "Name"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"Name it <code>Odoo</code> and paste the <b>MCP URL</b> above, then "
+"<b>Add</b>."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"Name it <code>Odoo</code>, paste the <b>MCP URL</b> above, choose "
+"<code>OAuth</code> authentication, then <b>Create</b>."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.ui.menu,name:muk_mcp_oauth.menu_oauth_client
+msgid "OAuth Clients"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"On Team and Enterprise plans, an owner adds the connector for the\n"
+"                        organization first; each member then connects with their own Odoo account."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields.selection,name:muk_mcp_oauth.selection__muk_mcp_oauth_grant__scope__write
+msgid "Read & Write"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields.selection,name:muk_mcp_oauth.selection__muk_mcp_oauth_grant__scope__read
+msgid "Read Only"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_client__redirect_uris
+msgid "Redirect URIs"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__redirect_uri
+msgid "Redirect Uri"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__refresh_expires
+msgid "Refresh Expires"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__refresh_hash
+msgid "Refresh Hash"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__scope
+msgid "Scope"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"Sign in to Odoo and <b>Allow</b>; in a conversation, pick Odoo from the "
+"<code>+</code> menu."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.constraint,message:muk_mcp_oauth.constraint_muk_mcp_oauth_client_client_id_unique
+msgid "The client ID must be unique."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__user_id
+msgid "User"
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model:ir.model.fields,help:muk_mcp_oauth.field_muk_mcp_oauth_grant__key_id
+msgid "muk_mcp.key issued as access token."
+msgstr ""
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize
+msgid "wants to access Odoo as"
+msgstr ""
