@@ -114,6 +114,7 @@ class TestMCPOAuth(HttpCase):
         wizard = self.env['muk_mcp.connect'].create({})
         self.assertIn(f'claude mcp add --transport http --scope user odoo {wizard.mcp_url}', wizard.claude_code_oauth_cmd)
         self.assertIn(wizard.mcp_url, wizard.codex_oauth_cmd)
+        self.assertIn('claude mcp login odoo', wizard.claude_code_oauth_cmd)
 
     def test_full_flow_read(self):
         _client_id, tokens = self._full_flow()
@@ -123,6 +124,10 @@ class TestMCPOAuth(HttpCase):
         key = self.env['muk_mcp.key'].sudo().authenticate(tokens['access_token'])
         self.assertEqual(key.user_id, self.env.ref('base.user_admin'))
         self.assertEqual(key.scope, 'read')
+
+    def test_offline_access_scope(self):
+        _client_id, tokens = self._full_flow(scope='mcp:read offline_access')
+        self.assertTrue(tokens['refresh_token'])
 
     def test_write_scope(self):
         _client_id, tokens = self._full_flow(scope='mcp:read mcp:write')

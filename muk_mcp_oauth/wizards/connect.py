@@ -12,6 +12,6 @@ class Connect(models.TransientModel):
         for record in self:
             record.claude_code_oauth_cmd = (
                 f'claude mcp add --transport http --scope user odoo {record.mcp_url}\n'
-                '# then, in Claude Code: /mcp > odoo > Authenticate'
+                'claude mcp login odoo'
             )
             record.codex_oauth_cmd = f'codex mcp add odoo --url {record.mcp_url}\ncodex mcp login odoo'

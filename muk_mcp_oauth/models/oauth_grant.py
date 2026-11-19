@@ -55,7 +55,8 @@ class OAuthGrant(models.Model):
     @api.model
     def _parse_scope(self, scope):
         """Requested OAuth scopes -> MuK key scope; read when none is asked. ``None`` when unknown."""
-        asked = set((scope or '').split())
+        # offline_access: asked by clients wanting a refresh token (ChatGPT), which is always issued
+        asked = set((scope or '').split()) - {'offline_access'}
         if asked - set(SCOPES):
             return None
         return 'write' if 'mcp:write' in asked else 'read'

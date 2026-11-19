@@ -49,12 +49,13 @@
                                     </div>
                                     <div class="card-body">
                                         <ol class="o_mcp_steps">
-                                            <li><b>Settings &gt; Connectors &gt; Add custom connector</b></li>
-                                            <li>Name: <code>Odoo</code>, URL: the <b>MCP URL</b> above, then <b>Add</b></li>
-                                            <li><b>Connect</b>: sign in to Odoo and <b>Allow</b></li>
+                                            <li><b>Customize &gt; Connectors</b>, <b>+ Add &gt; Add custom connector</b></li>
+                                            <li>Name: <code>Odoo</code>, URL: the <b>MCP URL</b> above, then <b>Continue</b> twice</li>
+                                            <li>Authentication: <b>Sign in now</b>, then <b>Add</b>: sign in to Odoo and <b>Allow</b></li>
                                             <li>In a conversation: <code>+</code> &gt; <b>Connectors</b> &gt; Odoo</li>
                                         </ol>
-                                        <p class="text-muted small mb-0">Team and Enterprise plans: an owner adds the connector for the organization first.</p>
+                                        <p class="text-muted small">Team and Enterprise plans: an owner first adds it in <b>Organization settings &gt; Connectors</b>; members then click <b>Connect</b> in <b>Customize &gt; Connectors</b>.</p>
+                                        <a href="https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp" target="_blank" rel="noopener noreferrer" class="small">Official guide <i class="fa fa-external-link" title="External link"/></a>
                                     </div>
                                 </div>
                             </div>
@@ -67,12 +68,13 @@
                                     </div>
                                     <div class="card-body">
                                         <ol class="o_mcp_steps">
-                                            <li><b>Settings &gt; Apps &amp; Connectors &gt; Advanced settings</b>: turn on <b>Developer mode</b></li>
-                                            <li><b>Apps &amp; Connectors &gt; Create</b></li>
-                                            <li>Name: <code>Odoo</code>, URL: the <b>MCP URL</b> above, authentication: <code>OAuth</code></li>
-                                            <li>Sign in to Odoo and <b>Allow</b>; in a conversation: <code>+</code> &gt; Odoo</li>
+                                            <li><b>Plugins</b>, <code>+</code> &gt; <b>Add custom MCP server</b></li>
+                                            <li>Name: <code>Odoo</code>, Connection: the <b>MCP URL</b> above, authentication: <code>OAuth</code></li>
+                                            <li>Tick <b>I understand and want to continue</b>, then <b>Create as a plugin</b>: sign in to Odoo and <b>Allow</b></li>
+                                            <li>In a conversation: type <code>@</code> and pick Odoo</li>
                                         </ol>
-                                        <p class="text-muted small mb-0">Developer mode needs a paid plan.</p>
+                                        <p class="text-muted small">ChatGPT Business, Enterprise and Edu, on the web: workspace admins add and publish it.</p>
+                                        <a href="https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt" target="_blank" rel="noopener noreferrer" class="small">Official guide <i class="fa fa-external-link" title="External link"/></a>
                                     </div>
                                 </div>
                             </div>
@@ -85,6 +87,7 @@
                                     </div>
                                     <div class="card-body o_mcp_snippet">
                                         <field name="claude_code_oauth_cmd" readonly="1" nolabel="1"/>
+                                        <a href="https://code.claude.com/docs/en/mcp" target="_blank" rel="noopener noreferrer" class="small">Official guide <i class="fa fa-external-link" title="External link"/></a>
                                     </div>
                                 </div>
                             </div>
@@ -97,6 +100,7 @@
                                     </div>
                                     <div class="card-body o_mcp_snippet">
                                         <field name="codex_oauth_cmd" readonly="1" nolabel="1"/>
+                                        <a href="https://developers.openai.com/codex/mcp" target="_blank" rel="noopener noreferrer" class="small">Official guide <i class="fa fa-external-link" title="External link"/></a>
                                     </div>
                                 </div>
                             </div>

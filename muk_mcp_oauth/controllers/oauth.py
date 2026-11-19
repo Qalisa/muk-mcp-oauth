@@ -65,7 +65,7 @@ class MCPOAuthController(http.Controller):
             'code_challenge_methods_supported': ['S256'],
             'token_endpoint_auth_methods_supported': ['none'],
             'revocation_endpoint_auth_methods_supported': ['none'],
-            'scopes_supported': SCOPES_SUPPORTED,
+            'scopes_supported': SCOPES_SUPPORTED + ['offline_access'],
             # RFC 9207: `iss` in every authorization response (ChatGPT then uses its fixed redirect URI)
             'authorization_response_iss_parameter_supported': True,
         })
