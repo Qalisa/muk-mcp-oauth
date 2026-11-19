@@ -1,5 +1,11 @@
 // MuK's Connect wizard (views/connect_views.xml)
 .o_mcp_connect {
+    // as a page: nothing to save or act on, keep only the way back
+    .o_form_status_indicator,
+    .o_control_panel_breadcrumbs_actions,
+    .o_last_breadcrumb_item {
+        display: none !important;
+    }
     .o_mcp_url .o_field_CopyClipboardChar {
         font-family: $font-family-monospace;
         font-size: 1.1rem;
