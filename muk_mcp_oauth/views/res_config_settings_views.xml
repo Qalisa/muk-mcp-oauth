@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_res_config_settings_form" model="ir.ui.view">
+        <field name="name">res.config.settings.form.mcp.read_only</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="muk_mcp.view_res_config_settings_form"/>
+        <field name="arch" type="xml">
+            <setting id="mcp_annotate_messages" position="before">
+                <setting id="mcp_read_only" string="Read Only"
+                         help="Every MCP access is read only, whatever its key: tools that change data are refused. Keys keep their own scope for when this is turned off.">
+                    <field name="mcp_read_only"/>
+                </setting>
+            </setting>
+        </field>
+    </record>
+</odoo>

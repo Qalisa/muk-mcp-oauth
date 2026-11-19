@@ -47,6 +47,12 @@ Anything else is refused, and an authorization request with an unknown client or
 MuK's **Connect** wizard (Settings > MCP > Connect, a *Connect an AI tool* button in every user's profile, and the shareable link `/mcp/setup`)
 gets step-by-step tabs for the Claude apps and ChatGPT, and sign-in commands for Claude Code and Codex.
 
+## Read-only switch
+
+Settings > MCP Server > **Read Only** (system parameter `muk_mcp_oauth.read_only`) treats every MCP access as read
+only, whatever its key: tools that change data are refused. Keys keep their own scope, which applies again once the
+switch is off.
+
 ## Install
 
 Depends on `muk_mcp` (and its `muk_web_utils`). Put this repository in the `addons_path`, branch `18.0`, and

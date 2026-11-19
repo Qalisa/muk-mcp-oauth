@@ -36,6 +36,18 @@ class TestMCPOAuth(HttpCase):
             'Accept': 'application/json, text/event-stream',
         })
 
+    def _call_tool(self, access_token, name, arguments):
+        headers = {'Authorization': f'Bearer {access_token}', 'Accept': 'application/json, text/event-stream'}
+        init = self._post_json('/mcp', INITIALIZE, headers=headers)
+        if session := init.headers.get('Mcp-Session-Id'):
+            headers['Mcp-Session-Id'] = session
+        self._post_json('/mcp', {'jsonrpc': '2.0', 'method': 'notifications/initialized'}, headers=headers)
+        response = self._post_json('/mcp', {
+            'jsonrpc': '2.0', 'id': 2, 'method': 'tools/call', 'params': {'name': name, 'arguments': arguments},
+        }, headers=headers)
+        self.assertEqual(response.status_code, 200, response.text)
+        return response.json()['result']
+
     def _authorize(self, client_id, verifier, scope='mcp:read', decision='allow', redirect_uri=REDIRECT):
         """Log in as admin, open the consent page and answer it. Returns the redirect's query."""
         self.authenticate('admin', 'admin')
@@ -128,6 +140,16 @@ class TestMCPOAuth(HttpCase):
     def test_offline_access_scope(self):
         _client_id, tokens = self._full_flow(scope='mcp:read offline_access')
         self.assertTrue(tokens['refresh_token'])
+
+    def test_read_only_switch(self):
+        _client_id, tokens = self._full_flow(scope='mcp:read mcp:write')
+        create = {'model': 'res.partner.category', 'values': {'name': 'mcp-read-only'}}
+        param = self.env['ir.config_parameter'].sudo()
+        param.set_param('muk_mcp_oauth.read_only', 'True')
+        self.assertTrue(self._call_tool(tokens['access_token'], 'create_records', create).get('isError'))
+        self.assertFalse(self._call_tool(tokens['access_token'], 'search_count', {'model': 'res.partner'}).get('isError'))
+        param.set_param('muk_mcp_oauth.read_only', False)
+        self.assertFalse(self._call_tool(tokens['access_token'], 'create_records', create).get('isError'))
 
     def test_write_scope(self):
         _client_id, tokens = self._full_flow(scope='mcp:read mcp:write')
