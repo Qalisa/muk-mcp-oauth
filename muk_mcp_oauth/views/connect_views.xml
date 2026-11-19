@@ -46,6 +46,7 @@
                                         <img src="/muk_mcp_oauth/static/src/img/brands/claude.svg" alt="" class="o_mcp_logo"/>
                                         <strong>Claude</strong>
                                         <span class="text-muted small">desktop app, claude.ai</span>
+                                        <a href="https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp" target="_blank" rel="noopener noreferrer" class="ms-auto small text-nowrap">Official guide <i class="fa fa-external-link" title="External link"/></a>
                                     </div>
                                     <div class="card-body">
                                         <ol class="o_mcp_steps">
@@ -54,8 +55,7 @@
                                             <li>Authentication: <b>Sign in now</b>, then <b>Add</b>: sign in to Odoo and <b>Allow</b></li>
                                             <li>In a conversation: <code>+</code> &gt; <b>Connectors</b> &gt; Odoo</li>
                                         </ol>
-                                        <p class="text-muted small">Team and Enterprise plans: an owner first adds it in <b>Organization settings &gt; Connectors</b>; members then click <b>Connect</b> in <b>Customize &gt; Connectors</b>.</p>
-                                        <a href="https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp" target="_blank" rel="noopener noreferrer" class="small">Official guide <i class="fa fa-external-link" title="External link"/></a>
+                                        <p class="text-muted small mb-0">Team and Enterprise plans: an owner first adds it in <b>Organization settings &gt; Connectors</b>; members then click <b>Connect</b> in <b>Customize &gt; Connectors</b>.</p>
                                     </div>
                                 </div>
                             </div>
@@ -65,6 +65,7 @@
                                         <img src="/muk_mcp_oauth/static/src/img/brands/openai.svg" alt="" class="o_mcp_logo"/>
                                         <strong>ChatGPT</strong>
                                         <span class="text-muted small">web, desktop app</span>
+                                        <a href="https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt" target="_blank" rel="noopener noreferrer" class="ms-auto small text-nowrap">Official guide <i class="fa fa-external-link" title="External link"/></a>
                                     </div>
                                     <div class="card-body">
                                         <ol class="o_mcp_steps">
@@ -73,8 +74,7 @@
                                             <li>Tick <b>I understand and want to continue</b>, then <b>Create as a plugin</b>: sign in to Odoo and <b>Allow</b></li>
                                             <li>In a conversation: type <code>@</code> and pick Odoo</li>
                                         </ol>
-                                        <p class="text-muted small">ChatGPT Business, Enterprise and Edu, on the web: workspace admins add and publish it.</p>
-                                        <a href="https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt" target="_blank" rel="noopener noreferrer" class="small">Official guide <i class="fa fa-external-link" title="External link"/></a>
+                                        <p class="text-muted small mb-0">ChatGPT Business, Enterprise and Edu, on the web: workspace admins add and publish it.</p>
                                     </div>
                                 </div>
                             </div>
@@ -83,11 +83,13 @@
                                     <div class="card-header d-flex align-items-center gap-2">
                                         <img src="/muk_mcp_oauth/static/src/img/brands/claude-code.svg" alt="" class="o_mcp_logo"/>
                                         <strong>Claude Code</strong>
-                                        <field name="claude_code_oauth_cmd" widget="CopyClipboardButton" string="Copy" class="ms-auto" nolabel="1"/>
+                                        <a href="https://code.claude.com/docs/en/mcp" target="_blank" rel="noopener noreferrer" class="ms-auto small text-nowrap">Official guide <i class="fa fa-external-link" title="External link"/></a>
                                     </div>
                                     <div class="card-body o_mcp_snippet">
-                                        <field name="claude_code_oauth_cmd" readonly="1" nolabel="1"/>
-                                        <a href="https://code.claude.com/docs/en/mcp" target="_blank" rel="noopener noreferrer" class="small">Official guide <i class="fa fa-external-link" title="External link"/></a>
+                                        <div class="o_mcp_code">
+                                            <field name="claude_code_oauth_cmd" readonly="1" nolabel="1"/>
+                                            <field name="claude_code_oauth_cmd" widget="CopyClipboardButton" string="Copy" class="o_mcp_copy" nolabel="1"/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -96,11 +98,13 @@
                                     <div class="card-header d-flex align-items-center gap-2">
                                         <img src="/muk_mcp_oauth/static/src/img/brands/codex.svg" alt="" class="o_mcp_logo"/>
                                         <strong>Codex</strong>
-                                        <field name="codex_oauth_cmd" widget="CopyClipboardButton" string="Copy" class="ms-auto" nolabel="1"/>
+                                        <a href="https://developers.openai.com/codex/mcp" target="_blank" rel="noopener noreferrer" class="ms-auto small text-nowrap">Official guide <i class="fa fa-external-link" title="External link"/></a>
                                     </div>
                                     <div class="card-body o_mcp_snippet">
-                                        <field name="codex_oauth_cmd" readonly="1" nolabel="1"/>
-                                        <a href="https://developers.openai.com/codex/mcp" target="_blank" rel="noopener noreferrer" class="small">Official guide <i class="fa fa-external-link" title="External link"/></a>
+                                        <div class="o_mcp_code">
+                                            <field name="codex_oauth_cmd" readonly="1" nolabel="1"/>
+                                            <field name="codex_oauth_cmd" widget="CopyClipboardButton" string="Copy" class="o_mcp_copy" nolabel="1"/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
