@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <!-- Logos: static/src/img/brands/SOURCES.md -->
     <!-- MuK's Connect wizard, reorganised: sign-in (OAuth) first, bearer-key setups in a second tab -->
     <record id="view_connect_form" model="ir.ui.view">
         <field name="name">muk_mcp.connect.form.oauth</field>
@@ -42,7 +43,7 @@
                             <div class="col-lg-6">
                                 <div class="card h-100">
                                     <div class="card-header d-flex align-items-center gap-2">
-                                        <i class="fa fa-desktop" title="Claude"/>
+                                        <img src="/muk_mcp_oauth/static/src/img/brands/claude.svg" alt="" class="o_mcp_logo"/>
                                         <strong>Claude</strong>
                                         <span class="text-muted small">desktop app, claude.ai</span>
                                     </div>
@@ -60,7 +61,7 @@
                             <div class="col-lg-6">
                                 <div class="card h-100">
                                     <div class="card-header d-flex align-items-center gap-2">
-                                        <i class="fa fa-comments" title="ChatGPT"/>
+                                        <img src="/muk_mcp_oauth/static/src/img/brands/openai.svg" alt="" class="o_mcp_logo"/>
                                         <strong>ChatGPT</strong>
                                         <span class="text-muted small">web, desktop app</span>
                                     </div>
@@ -78,7 +79,7 @@
                             <div class="col-lg-6">
                                 <div class="card h-100">
                                     <div class="card-header d-flex align-items-center gap-2">
-                                        <i class="fa fa-terminal" title="Claude Code"/>
+                                        <img src="/muk_mcp_oauth/static/src/img/brands/claude-code.svg" alt="" class="o_mcp_logo"/>
                                         <strong>Claude Code</strong>
                                         <field name="claude_code_oauth_cmd" widget="CopyClipboardButton" string="Copy" class="ms-auto" nolabel="1"/>
                                     </div>
@@ -90,7 +91,7 @@
                             <div class="col-lg-6">
                                 <div class="card h-100">
                                     <div class="card-header d-flex align-items-center gap-2">
-                                        <i class="fa fa-terminal" title="Codex"/>
+                                        <img src="/muk_mcp_oauth/static/src/img/brands/codex.svg" alt="" class="o_mcp_logo"/>
                                         <strong>Codex</strong>
                                         <field name="codex_oauth_cmd" widget="CopyClipboardButton" string="Copy" class="ms-auto" nolabel="1"/>
                                     </div>

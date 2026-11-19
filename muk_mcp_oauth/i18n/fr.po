@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0-20260803\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 06:55+0000\n"
-"PO-Revision-Date: 2026-11-19 06:55+0000\n"
+"POT-Creation-Date: 2026-11-19 06:59+0000\n"
+"PO-Revision-Date: 2026-11-19 06:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -40,43 +40,37 @@ msgstr "<b>Paramètres &gt; Connecteurs &gt; Ajouter un connecteur personnalisé
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"<i class=\"fa fa-comments\" title=\"ChatGPT\"/>\n"
-"                                        <strong>ChatGPT</strong>\n"
-"                                        <span class=\"text-muted small\">web, desktop app</span>"
-msgstr "<i class=\"fa fa-comments\" title=\"ChatGPT\"/> <strong>ChatGPT</strong> <span class=\"text-muted small\">web, application desktop</span>"
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"<i class=\"fa fa-desktop\" title=\"Claude\"/>\n"
-"                                        <strong>Claude</strong>\n"
-"                                        <span class=\"text-muted small\">desktop app, claude.ai</span>"
-msgstr "<i class=\"fa fa-desktop\" title=\"Claude\"/> <strong>Claude</strong> <span class=\"text-muted small\">application desktop, claude.ai</span>"
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
 msgid "<i class=\"fa fa-link fa-lg\" title=\"MCP URL\"/>"
 msgstr "<i class=\"fa fa-link fa-lg\" title=\"URL MCP\"/>"
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"<i class=\"fa fa-terminal\" title=\"Claude Code\"/>\n"
-"                                        <strong>Claude Code</strong>"
-msgstr "<i class=\"fa fa-terminal\" title=\"Claude Code\"/> <strong>Claude Code</strong>"
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
-msgid ""
-"<i class=\"fa fa-terminal\" title=\"Codex\"/>\n"
-"                                        <strong>Codex</strong>"
-msgstr "<i class=\"fa fa-terminal\" title=\"Codex\"/> <strong>Codex</strong>"
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize_error
 msgid "<strong>Authorization refused.</strong>"
 msgstr "<strong>Autorisation refusée.</strong>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"<strong>ChatGPT</strong>\n"
+"                                        <span class=\"text-muted small\">web, desktop app</span>"
+msgstr "<strong>ChatGPT</strong> <span class=\"text-muted small\">web, application desktop</span>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "<strong>Claude Code</strong>"
+msgstr "<strong>Claude Code</strong>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid ""
+"<strong>Claude</strong>\n"
+"                                        <span class=\"text-muted small\">desktop app, claude.ai</span>"
+msgstr "<strong>Claude</strong> <span class=\"text-muted small\">application desktop, claude.ai</span>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
+msgid "<strong>Codex</strong>"
+msgstr "<strong>Codex</strong>"
 
 #. module: muk_mcp_oauth
 #: model:ir.model.fields,field_description:muk_mcp_oauth.field_muk_mcp_oauth_grant__access_expires
