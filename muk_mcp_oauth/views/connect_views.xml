@@ -132,7 +132,7 @@
         <field name="res_model">muk_mcp.connect</field>
         <field name="view_mode">form</field>
         <field name="view_id" ref="muk_mcp.view_connect_form"/>
-        <field name="target">current</field>
+        <field name="target">main</field><!-- clears the breadcrumbs: the URL stays /odoo/connect-ai/new -->
         <field name="path">connect-ai</field>
     </record>
 
@@ -143,8 +143,9 @@
         <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
         <field name="arch" type="xml">
             <xpath expr="//h1" position="after">
-                <button name="%(muk_mcp_oauth.action_connect_page)d" type="action" string="Connect an AI tool"
-                        icon="fa-plug" class="btn btn-secondary mb-3"/>
+                <a href="/odoo/connect-ai/new" class="btn btn-secondary mb-3">
+                    <i class="fa fa-plug" title="Connect an AI tool"/> Connect an AI tool
+                </a>
             </xpath>
         </field>
     </record>

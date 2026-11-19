@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0-20260803\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-19 07:42+0000\n"
-"PO-Revision-Date: 2026-11-19 07:42+0000\n"
+"POT-Creation-Date: 2026-11-19 09:20+0000\n"
+"PO-Revision-Date: 2026-11-19 09:20+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -31,6 +31,11 @@ msgstr "<b>Plugins</b>, <code>+</code> &gt; <b>Ajouter un serveur MCP personnali
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
 msgid "<i class=\"fa fa-link fa-lg\" title=\"MCP URL\"/>"
 msgstr "<i class=\"fa fa-link fa-lg\" title=\"URL MCP\"/>"
+
+#. module: muk_mcp_oauth
+#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_users_form_simple_modif
+msgid "<i class=\"fa fa-plug\" title=\"Connect an AI tool\"/> Connect an AI tool"
+msgstr "<i class=\"fa fa-plug\" title=\"Connecter un outil d'IA\"/> Connecter un outil d'IA"
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.authorize_error
@@ -134,11 +139,6 @@ msgstr "Connecter une IA"
 #: model:ir.model,name:muk_mcp_oauth.model_muk_mcp_connect
 msgid "Connect AI Wizard"
 msgstr ""
-
-#. module: muk_mcp_oauth
-#: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_users_form_simple_modif
-msgid "Connect an AI tool"
-msgstr "Connecter un outil d'IA"
 
 #. module: muk_mcp_oauth
 #: model_terms:ir.ui.view,arch_db:muk_mcp_oauth.view_connect_form
